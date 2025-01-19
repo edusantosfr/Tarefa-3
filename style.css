@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Lexend:wght@100..900&family=M+PLUS+Rounded+1c&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background: var(--body-color);
+}
+
+:root {
+    --border-color: rgb(179, 179, 179);
+    --body-color: rgb(240, 240, 240);
+    font-family: "Quicksand", serif;
+    --title-font: "Lexend Giga", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* GRID */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 16rem 25rem 1fr 8rem;
+
+    grid-template-areas:
+        "head"
+        "images-carousel"
+        "main"
+        "footer"
+    ;
+
+    background: rgb(224, 224, 224);
+}
+
+#head {
+    grid-area: head;
+    background-color: var(--body-color);
+
+    width: 78rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#images-carousel {
+    grid-area: images-carousel;
+}
+
+#main {
+    grid-area: main;
+    background-color: var(--body-color);
+
+    width: 78rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer {
+    grid-area: footer;
+    background-color: rgb(71, 71, 71);
+
+    width: 78rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+
+header {
+    align-content: center;
+    text-align: center;
+}
+
+#sponsors {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+h4 {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+#icons img {
+    margin: 10px;
+    height: 25px;
+    width: 25px;
+}
+
+#logo {
+    font-family: var(--title-font);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 600;
+}
+
+#logo a {
+    text-decoration: none;
+    font-size: 8rem;
+    color: black;
+}
+
+#navigation {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-weight: 900;
+    font-size: medium;
+}
+
+/* MAIN */
+
+#demonstration-images {
+    display: flex;
+    justify-content: space-between;
+    height: 25rem;
+    background: white;
+}
+
+#content {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 64rem;
+}
+
+/* CARDS */
+
+#main-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+
+#cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35rem;
+
+    grid-template-areas:
+        "card1 card2"
+    ;
+
+    justify-items: center;
+}
+
+.card1 {
+    grid-area: card1;
+    background-color: var(--body-color);
+}
+
+.card2 {
+    grid-area: card2;
+    background-color: var(--body-color);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    height: 31rem;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+}
+
+.images img {
+    display: flex;
+    justify-content: space-between;
+    width: 26rem;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.text {
+    display: flex;
+    width: 24rem;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-content: center;
+    line-height: 1.7;
+}
+
+h2 {
+    font-family: var(--title-font);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.text h3 {
+    font-family: var(--title-font);
+    font-weight: 300;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .text {
+    width: 55rem;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+}
+
+.video-container video {
+    width: 68rem;
+}
+
+/* FOOTER */
+
+#footer-container {
+    background: rgb(71, 71, 71);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0.6rem;
+    color: white;
+}
+
+#footer-container a {
+    background: rgb(71, 71, 71);
+    text-decoration: none;
+    color: white;
+    font-family: var(--title-font);
+    font-size: 2.3rem;
+    margin: 0.5rem;
+}
+
+#footer-container p {
+    background: rgb(71, 71, 71);
+}
+
+@media screen and (max-width: 1840px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .image-aside {
+        display: none;
+    }
+
+    #demonstration-images {
+        display: flex;
+        justify-content: center;
+        background: rgb(224, 224, 224);
+        height: 31rem;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    #head {
+        background-color: var(--body-color);
+
+        width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #images-carousel img{
+        width: 58rem;
+    }
+
+    #main {
+        background-color: var(--body-color);
+
+        width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60rem;
+    }
+
+    #footer {
+        background-color: rgb(71, 71, 71);
+
+        height: 12rem;
+        width: 60rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #footer-container a {
+        font-size: 4rem;
+        margin: 0.8rem;
+    }
+
+    header {
+        align-content: center;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    #navigation a {
+        font-size: 1.3rem;
+    }
+    
+
+    #cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 40rem;
+    
+        grid-template-areas:
+            "card1"
+            "card2"
+        ;
+    
+        justify-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 45rem;
+        height: 38rem;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+    }
+    
+    .images img {
+        display: flex;
+        justify-content: space-between;
+        width: 43rem;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .text {
+        display: flex;
+        width: 40rem;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;
+        align-content: center;
+        line-height: 1.7;
+    }
+
+    .card2 {
+        margin-bottom: 2rem;
+    }
+
+    #main-title h2 {
+        font-family: var(--title-font);
+        font-size: 3rem;
+        font-weight: 400;
+    }
+
+    #about .text {
+        width: 50rem;
+    }
+
+    .video-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 4rem;
+    }
+
+    .video-container video {
+        width: 55rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .container {
+        grid-template-rows: 14rem 25rem 1fr 8rem;
+    }
+    
+    #head {
+        background-color: var(--body-color);
+
+        width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #images-carousel img{
+        width: 45rem;
+    }
+
+    #main {
+        background-color: var(--body-color);
+
+        width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 48rem;
+    }
+
+    #footer {
+        background-color: rgb(71, 71, 71);
+
+        height: 12rem;
+        width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #logo a {
+        text-decoration: none;
+        font-size: 6rem;
+        color: black;
+    }
+
+    #about .text {
+        width: 41rem;
+    }
+
+    .video-container {
+        margin-bottom: 1rem;
+    }
+
+    .video-container video {
+        width: 45rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        grid-template-rows: 13.5rem 20rem 1fr 8rem;
+    }
+    
+    #head {
+        background-color: var(--body-color);
+
+        width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #images-carousel img{
+        height: 20rem;
+        width: 38rem;
+    }
+
+    #main {
+        background-color: var(--body-color);
+
+        width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40rem;
+    }
+
+    #cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 36rem;
+    
+        grid-template-areas:
+            "card1"
+            "card2"
+        ;
+    
+        justify-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 34rem;
+        height: 34rem;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+    }
+    
+    .images img {
+        display: flex;
+        justify-content: space-between;
+        width: 32rem;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .text {
+        display: flex;
+        width: 30rem;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;
+        align-content: center;
+        line-height: 1.7;
+    }
+
+    #footer {
+        background-color: rgb(71, 71, 71);
+
+        height: 12rem;
+        width: 40rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #logo a {
+        text-decoration: none;
+        font-size: 5.5rem;
+        color: black;
+    }
+
+    #about .text {
+        width: 33rem;
+    }
+
+    .video-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .video-container video {
+        width: 36rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-rows: 13.5rem 20rem 1fr 8rem;
+    }
+    
+    #head {
+        background-color: var(--body-color);
+
+        width: 36rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #images-carousel img{
+        height: 20rem;
+        width: 38rem;
+    }
+
+    #main {
+        background-color: var(--body-color);
+
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30rem;
+    }
+
+    #cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 36rem;
+    
+        grid-template-areas:
+            "card1"
+            "card2"
+        ;
+    
+        justify-items: center;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: 30rem;
+        height: 34rem;
+        align-items: center;
+        padding: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+    }
+    
+    .images img {
+        display: flex;
+        justify-content: space-between;
+        width: 30rem;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    
+    .text {
+        display: flex;
+        width: 30rem;
+        flex-direction: column;
+        text-align: justify;
+        justify-content: center;
+        align-content: center;
+        line-height: 1.7;
+    }
+
+    #footer {
+        background-color: rgb(71, 71, 71);
+
+        height: 12rem;
+        width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #logo a {
+        text-decoration: none;
+        font-size: 5.5rem;
+        color: black;
+    }
+
+    #about .text {
+        width: 30rem;
+    }
+
+    .video-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .video-container video {
+        width: 30rem;
+    }
+}

@@ -477,20 +477,20 @@ h2 {
     #head {
         background-color: var(--body-color);
 
-        width: 40rem;
+        width: 18rem;
         margin-left: auto;
         margin-right: auto;
     }
 
     #images-carousel img{
         height: 20rem;
-        width: 38rem;
+        width: 28rem;
     }
 
     #main {
         background-color: var(--body-color);
 
-        width: 40rem;
+        width: 30rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -499,13 +499,13 @@ h2 {
         margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
-        width: 40rem;
+        width: 30rem;
     }
 
     #cards-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 36rem;
+        grid-template-rows: 26;
     
         grid-template-areas:
             "card1"
@@ -518,8 +518,8 @@ h2 {
     .card {
         display: flex;
         flex-direction: column;
-        width: 34rem;
-        height: 34rem;
+        width: 24rem;
+        height: 24rem;
         align-items: center;
         padding: 1rem;
         border: 1px solid var(--border-color);
@@ -529,14 +529,14 @@ h2 {
     .images img {
         display: flex;
         justify-content: space-between;
-        width: 32rem;
+        width: 22rem;
         border-radius: 10px;
         margin-bottom: 5px;
     }
     
     .text {
         display: flex;
-        width: 30rem;
+        width: 20rem;
         flex-direction: column;
         text-align: justify;
         justify-content: center;
@@ -548,7 +548,7 @@ h2 {
         background-color: rgb(71, 71, 71);
 
         height: 12rem;
-        width: 40rem;
+        width: 30rem;
         margin-left: auto;
         margin-right: auto;
     }
@@ -568,11 +568,11 @@ h2 {
     }
 
     .video-container video {
-        width: 36rem;
+        width: 26rem;
     }
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
     .container {
         grid-template-rows: 13.5rem 20rem 1fr 8rem;
     }
@@ -673,4 +673,4 @@ h2 {
     .video-container video {
         width: 30rem;
     }
-}
+} */

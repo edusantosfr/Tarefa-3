@@ -272,8 +272,15 @@ h2 {
         grid-template-columns: 1fr;
     }
 
+    #main-title h2 {
+        font-size: 4rem;
+    }
     .image-aside {
         display: none;
+    }
+
+    #content {
+        margin-top: 25px !important;
     }
 
     #demonstration-images {
@@ -307,7 +314,7 @@ h2 {
     }
 
     #content {
-        margin-top: 50px;
+        margin-top: 30px !important;
         margin-left: auto;
         margin-right: auto;
         width: 60rem;
@@ -434,7 +441,7 @@ h2 {
     }
 
     #content {
-        margin-top: 50px;
+        margin-top: 30px !important;
         margin-left: auto;
         margin-right: auto;
         width: 48rem;
@@ -471,19 +478,40 @@ h2 {
 @media screen and (max-width: 768px) {
 
     .container {
-        grid-template-rows: 13.5rem 20rem 1fr 8rem;
+        grid-template-rows: 11rem 14rem 1fr 8rem;
     }
     
     #head {
         background-color: var(--body-color);
 
-        width: 18rem;
+        width: 30rem;
         margin-left: auto;
         margin-right: auto;
     }
 
+    header {
+        align-content: center;
+        text-align: center;
+        font-size: 1.0rem;
+    }  
+
+    #icons img{
+        width: 1.3rem;
+        height: 1.3rem;
+    }
+
+    #navigation a {
+        font-size: 1.0rem;
+    }
+
+    #logo a {
+        text-decoration: none;
+        font-size: 4rem;
+        color: black;
+    }
+
     #images-carousel img{
-        height: 20rem;
+        height: 14rem;
         width: 28rem;
     }
 
@@ -496,7 +524,7 @@ h2 {
     }
 
     #content {
-        margin-top: 50px;
+        margin-top: 30px !important;
         margin-left: auto;
         margin-right: auto;
         width: 30rem;
@@ -505,7 +533,7 @@ h2 {
     #cards-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 26;
+        grid-template-rows: 32rem;
     
         grid-template-areas:
             "card1"
@@ -519,11 +547,20 @@ h2 {
         display: flex;
         flex-direction: column;
         width: 24rem;
-        height: 24rem;
+        height: 30rem;
         align-items: center;
         padding: 1rem;
         border: 1px solid var(--border-color);
         border-radius: 10px;
+        font-size: medium;
+    }
+
+    #main-title h2 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-family: 2rem;
     }
     
     .images img {
@@ -547,20 +584,19 @@ h2 {
     #footer {
         background-color: rgb(71, 71, 71);
 
-        height: 12rem;
+        height: 9rem;
         width: 30rem;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #logo a {
-        text-decoration: none;
-        font-size: 5.5rem;
-        color: black;
+    #footer-container a {
+        font-size: 2rem;
+        margin: 0.8rem;
     }
 
     #about .text {
-        width: 33rem;
+        width: 24rem;
     }
 
     .video-container {
@@ -572,43 +608,71 @@ h2 {
     }
 }
 
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
+
     .container {
-        grid-template-rows: 13.5rem 20rem 1fr 8rem;
+        grid-template-rows: 8rem 10rem 1fr 8rem;
     }
     
     #head {
         background-color: var(--body-color);
 
-        width: 36rem;
+        width: 20rem;
         margin-left: auto;
         margin-right: auto;
     }
 
+    h4 {
+        font-size: 0.9rem;
+    }
+
+    header {
+        align-content: center;
+        text-align: center;
+        font-size: 1.0rem;
+    }  
+
+    #icons img{
+        width: 1.0rem;
+        height: 1.0rem;
+        margin: 5px;
+    }
+
+    #navigation a {
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+
+    #logo a {
+        text-decoration: none;
+        font-size: 2.5rem;
+        color: black;
+    }
+
     #images-carousel img{
-        height: 20rem;
-        width: 38rem;
+        height: 10rem;
+        width: 20rem;
     }
 
     #main {
         background-color: var(--body-color);
 
-        width: 30rem;
+        width: 20rem;
         margin-left: auto;
         margin-right: auto;
     }
 
     #content {
-        margin-top: 50px;
+        margin-top: 30px !important;
         margin-left: auto;
         margin-right: auto;
-        width: 30rem;
+        width: 20rem;
     }
 
     #cards-container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 36rem;
+        grid-template-rows: 26rem;
     
         grid-template-areas:
             "card1"
@@ -621,25 +685,35 @@ h2 {
     .card {
         display: flex;
         flex-direction: column;
-        width: 30rem;
-        height: 34rem;
+        width: 16rem;
+        height: 23.6rem;
         align-items: center;
         padding: 1rem;
         border: 1px solid var(--border-color);
         border-radius: 10px;
+        font-size: medium;
     }
+
+    #main-title h2 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem !important;
+    }
+
     
     .images img {
         display: flex;
         justify-content: space-between;
-        width: 30rem;
+        width: 14rem;
         border-radius: 10px;
         margin-bottom: 5px;
     }
     
     .text {
         display: flex;
-        width: 30rem;
+        width: 14rem;
         flex-direction: column;
         text-align: justify;
         justify-content: center;
@@ -647,30 +721,39 @@ h2 {
         line-height: 1.7;
     }
 
+    .text span {
+        font-size: 0.8rem;
+    }
+
+    .text h3 {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    #about .text {
+        width: 16rem;
+    }
+
+    .video-container {
+        margin-bottom: 0.8rem;
+        margin-top: 1rem;
+    }
+
+    .video-container video {
+        width: 18rem;
+    }
+
     #footer {
         background-color: rgb(71, 71, 71);
 
-        height: 12rem;
-        width: 30rem;
+        height: 9rem;
+        width: 20rem;
         margin-left: auto;
         margin-right: auto;
     }
 
-    #logo a {
-        text-decoration: none;
-        font-size: 5.5rem;
-        color: black;
+    #footer-container a {
+        font-size: 1.4rem;
+        margin: 0.8rem;
     }
-
-    #about .text {
-        width: 30rem;
-    }
-
-    .video-container {
-        margin-bottom: 1.5rem;
-    }
-
-    .video-container video {
-        width: 30rem;
-    }
-} */
+}
